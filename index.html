@@ -32,17 +32,14 @@
   firebase.analytics();
 
 </script>
-    
-    <script>
-    function clickEvent() {
-        alert('クリックされました');
-    }
-</script>
+   
     
     <p> ho1 </p>
     <script>
+      function clickEvent() {
       firebase.database().ref('users').set("a");
       alert('JavaScriptのアラート');
+      }
     </script>
   </body>
 </html>
