@@ -37,8 +37,10 @@
     <p> ho1 </p>
     <script>
       function clickEvent() {
-      firebase.database().ref('users').set("a");
       alert('JavaScriptのアラート');
+        var name="Name";
+  
+  firebase.database().ref('data').set({name:name});
       }
     </script>
   </body>
