@@ -12,6 +12,11 @@
   </head>
   <body>
     <p> ho1 </p>
+    <script>
+      var database = firebase.database();
+      firebase.database().ref('users').set("a");
+      alert('JavaScriptのアラート');
+    </script>
   </body>
 <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
@@ -29,11 +34,6 @@
   };
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  
-  var database = firebase.database();
-  firebase.database().ref('users').set("a");
-  
-  alert('JavaScriptのアラート');
 
 </script>
 </html>
