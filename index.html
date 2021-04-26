@@ -31,7 +31,9 @@
   firebase.analytics();
   
   var database = firebase.database();
-  firebase.database().ref('users/' + abc).set("a");
+  firebase.database().ref('users').set("a");
+  
+  alert('JavaScriptのアラート');
 
 </script>
 </html>
