@@ -12,37 +12,11 @@
   </head>
   <body>
     
-    <button onclick="clickEvent()">ボタン</button>
-    
-    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
-
-<script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyDsGaoHgpmmCG1CpZtOyFxb0pX1wvmnQbg",
-    authDomain: "azmod-99999.firebaseapp.com",
-    databaseURL: "https://azmod-99999-default-rtdb.firebaseio.com",
-    projectId: "azmod-99999",
-    storageBucket: "azmod-99999.appspot.com",
-    messagingSenderId: "628671452036",
-    appId: "1:628671452036:web:959e313f82ccccd33f83d1",
-    measurementId: "G-LQQV5N1HVV"
-  };
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-    var database = firebase.database();
-
-</script>
-   
-    
-    <p> ho1 </p>
     <script>
-      function clickEvent() {
-      alert('JavaScriptのアラート');
-        var name="Name";
-  
-  firebase.database().ref('data').set({name:name});
+      window.onload = function(){
+        alert('javascript1');
       }
-    </script>
+      </script>
+    
   </body>
 </html>
