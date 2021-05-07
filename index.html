@@ -16,7 +16,7 @@
     
     <script>
       window.onload = function(){
-        document.getElementById('mydiv').innerHTML = location.href.substring(1);
+        document.getElementById('mydiv').innerHTML = location.href.substring(1).split("/?copy=")[1];
         
       }
       </script>
